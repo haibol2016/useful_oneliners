@@ -1,0 +1,2 @@
+# find files by pattern and concatenate them using commas
+find -L ${FASTQ_DIR} -name "*$reads1_pat*" -type f | sort | paste -sd, -
